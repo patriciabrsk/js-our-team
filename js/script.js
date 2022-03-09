@@ -48,3 +48,32 @@ const team = [
         image: 'barbara-ramos-graphic-designer.jpg',
     },
 ];
+
+// MILESTONE 1:
+// stampare su console le informazioni di nome, ruolo e la stringa della foto
+
+for (let i = 0; i < team.length; i++) {
+    console.log(team[i].name);
+    console.log(team[i].role);
+    console.log(team[i].image);
+}
+
+// MILESTONE 2:
+// stampare le stesse informazioni su DOM sottoforma di stringhe
+
+const cardWrapper = document.getElementById('cards-wrapper');
+
+for (let i = 0; i < team.length; i++) {
+    let card = document.createElement('div');
+    card.classList.add('card');
+    cardWrapper.appendChild(card);
+    card.innerHTML = `
+    <img src="./img/${team[i].image}" class="card-img-top" alt="Team member portrait">
+    <div class="card-body">
+        <h5 class="card-title">${team[i].name}</h5>
+        <p class="card-text">${team[i].role}</p>
+    </div>`;
+    // console.log(team[i].name);
+    // console.log(team[i].role);
+    // console.log(team[i].image);
+}
