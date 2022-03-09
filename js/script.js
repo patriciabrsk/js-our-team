@@ -61,17 +61,19 @@ for (let i = 0; i < team.length; i++) {
 // MILESTONE 2:
 // stampare le stesse informazioni su DOM sottoforma di stringhe
 
-const cardWrapper = document.getElementById('cards-wrapper');
+const cardsWrapper = document.getElementById('cards-wrapper');
 
 for (let i = 0; i < team.length; i++) {
     let card = document.createElement('div');
-    card.classList.add('card');
-    cardWrapper.appendChild(card);
+    card.classList.add('col');
+    cardsWrapper.appendChild(card);
     card.innerHTML = `
-    <img src="./img/${team[i].image}" class="card-img-top" alt="Team member portrait">
-    <div class="card-body">
-        <h5 class="card-title">${team[i].name}</h5>
-        <p class="card-text">${team[i].role}</p>
+    <div class="card">
+        <img src="./img/${team[i].image}" class="card-img-top" alt="Team member portrait">
+        <div class="card-body">
+            <h5 class="card-title">${team[i].name}</h5>
+            <p class="card-text">${team[i].role}</p>
+        </div>
     </div>`;
     // console.log(team[i].name);
     // console.log(team[i].role);

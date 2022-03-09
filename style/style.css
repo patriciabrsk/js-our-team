@@ -5,3 +5,8 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+div#cards-wrapper {
+    width: 70vw;
+    margin: 0 auto;
+}
