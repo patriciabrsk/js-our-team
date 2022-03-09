@@ -49,17 +49,11 @@ const team = [
     },
 ];
 
-// MILESTONE 1:
-// stampare su console le informazioni di nome, ruolo e la stringa della foto
-
 for (let i = 0; i < team.length; i++) {
     console.log(team[i].name);
     console.log(team[i].role);
     console.log(team[i].image);
 }
-
-// MILESTONE 2:
-// stampare le stesse informazioni su DOM sottoforma di stringhe
 
 const cardsWrapper = document.getElementById('cards-wrapper');
 
@@ -68,7 +62,7 @@ for (let i = 0; i < team.length; i++) {
     card.classList.add('col');
     cardsWrapper.appendChild(card);
     card.innerHTML = `
-    <div class="card">
+    <div class="card shadow border-0">
         <img src="./img/${team[i].image}" class="card-img-top" alt="Team member portrait">
         <div class="card-body">
             <h5 class="card-title">${team[i].name}</h5>

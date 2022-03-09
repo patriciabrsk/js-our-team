@@ -22,7 +22,24 @@
             </div>
         </div>
         <div id="cards-wrapper" class="row row-cols-md-3 mt-3 mb-5 g-4"></div>
-        div.form
+        <form class="row g-3 justify-content-center d-flex flex-column align-items-center pt-5 mb-5">
+            <div class="col-5 align-items-center flex-column d-flex">
+                <h5 class="text-uppercase mb-4">Add a new member</h5>
+                <label for="input-name" class="text-uppercase"></label>
+                <input type="text" class="form-control rounded-pill" id="input-name" placeholder="Name" required>
+            </div>
+            <div class="col-5 align-items-center flex-column d-flex">
+                <label for="input-distance" class="text-uppercase"></label>
+                <input type="text" class="form-control rounded-pill" id="input-role" placeholder="Role" required>
+            </div>
+            <div class="col-5 align-items-center flex-column d-flex">
+                <label for="input-age" class="text-uppercase"></label>
+                <input type="text" class="form-control rounded-pill" id="input-image" placeholder="Image" required>
+            </div>
+            <div class="col-5 text-center py-2 flex-column align-items-center d-flex">
+                <button id="submit" class="btn btn-outline-dark rounded-pill text-uppercase mb-4">Add</button>
+            </div>
+        </form>
     </main>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
