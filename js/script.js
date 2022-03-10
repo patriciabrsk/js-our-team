@@ -63,7 +63,7 @@ for (let i = 0; i < team.length; i++) {
     cardsWrapper.appendChild(card);
     card.innerHTML = `
     <div class="card shadow border-0">
-        <img src="./img/${team[i].image}" class="card-img-top" alt="Team member portrait">
+        <img src="./img/${team[i].image}" class="card-img-top" alt="${team[i].name}">
         <div class="card-body">
             <h5 class="card-title">${team[i].name}</h5>
             <p class="card-text">${team[i].role}</p>
